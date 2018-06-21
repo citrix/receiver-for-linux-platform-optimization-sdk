@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="description" content="Reference guide for Platform Optimization SDK for Citrix Receiver for Linux 13.10">  
+    <title>Platform Optimization SDK for Citrix Receiver for Linux 13.10</title>
+     
+    <link rel="shortcut icon" href="
+https://www.citrix.com/etc/designs/citrix/icon-favicon.png"> 
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="./css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="./css/theme_extra.css" type="text/css" />
+    <link rel="stylesheet" href="./css/highlight.css">
+    <link rel="stylesheet" href="./css/override.css" type="text/css" />
+    <link rel="stylesheet" href="./css/font-awesome.css" type="text/css" /> 
+    <script>
+      // Current page data
+      var mkdocs_page_name = "None";
+      var mkdocs_page_input_path = "index.md";
+      var mkdocs_page_url = "/";
+
+    </script>
+    
+    <script src="./js/jquery-2.1.1.min.js"></script>
+    <script src="./js/modernizr-2.8.3.min.js"></script>
+    <script type="text/javascript" src="./js/highlight.pack.js"></script>
+    <script src="./js/theme.js"></script>
+    <script src="./js/custom.js"></script>  
+  </head>
+
+  <body class="wy-body-for-nav" role="document">
+
+    <div class="header-top">
+
+        <div class="header-top-left">
+          <a href="http://developer-docs.citrix.com" class="logo-position"><img height="60" src="./img/citrixlogoblack.png" target="_blank" class="logo-citrix"><span style="color:#000;font-size: 20px;position: relative;top:4px;left:20px;">Developer Documentation</span></a>
+        </div>
+        <div class="header-top-right">
+          <ul>
+
+            <form id="rtd-search-form-alt" class="wy-form" action="./search.html" method="get">
+             <ul class="header-elements">
+              <li class="list-inline support">
+                <input name="q" id="txtName" type="text" placeholder="Search SDKs" class="searchdocs">
+                <a class="fa fa-search errspan"></a>
+<!---
+              </li>
+             <li> <a href="javascript:void(0);" style="font-size: 22px;position: relative;left: -10px;top: 3px"><i class="fa fa-globe"></i></a></li>
+             </ul>
+             --->
+            </form>
+
+          </ul>
+
+        </div>
+
+    </div>
+    <div class="body">
+      <div class="wy-grid-for-nav">
+
+        
+        <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+          <div class="wy-side-nav-search">
+            <div role="search">
+  <form id ="rtd-search-form-alt" class="wy-form" action="./search.html" method="get">
+	<i class="fa fa-search"></i>
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+          </div>
+
+          <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+            <ul class="current">
+              
+              
+    <li class="toctree-l1 current">
+        <a class="toctree-l1-a current" href=".">Home</a>
+		
+            <ul style="margin-left: 0px;padding-left:15px;border-left: 1px solid #b2b2b2;">
+            
+                <li class="toctree-l3"><a href="#platform-optimization-sdk-for-citrix-receiver-for-linux-1310" style="padding:0px;position: relative;">&nbsp;Platform Optimization SDK for Citrix Receiver for Linux 13.10</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#compatibility-with-receiver" style="padding:0px;position: relative;">&nbsp;Compatibility with Receiver</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#who-should-use-this-sdk" style="padding:0px;position: relative;">&nbsp;Who should use this SDK?</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#plugins-for-h264-based-session-graphics" style="padding:0px;position: relative;">&nbsp;Plugins for H.264-based session graphics</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#plugins-for-accelerated-jpeg-decoding" style="padding:0px;position: relative;">&nbsp;Plugins for accelerated JPEG decoding</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#plugins-for-memory-allocation" style="padding:0px;position: relative;">&nbsp;Plugins for memory allocation</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#plugins-for-accelerated-drawing-in-x11-environments" style="padding:0px;position: relative;">&nbsp;Plugins for accelerated drawing in X11 environments</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#plugins-for-non-x11-environments" style="padding:0px;position: relative;">&nbsp;Plugins for non-X11 environments</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#hdx-multimedia-with-plugins" style="padding:0px;position: relative;">&nbsp;HDX multimedia with plugins</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#ui-dialog-library" style="padding:0px;position: relative;">&nbsp;UI dialog library</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#using-the-test-harness-for-kvme-plugins" style="padding:0px;position: relative;">&nbsp;Using the test harness for KVME plugins</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#change-history" style="padding:0px;position: relative;">&nbsp;Change history</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+			  
+            </ul>
+          </div>
+          &nbsp;
+        </nav>
+
+        <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+           
+          <div class="wy-nav-content">
+            <div class="rst-content">
+              <!-- <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Home</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div> -->
+              <div role="main">
+                <div class="section">
+                <div class="file-format">
+                 <div class="leftAlign" style="float: left;visibility: hidden;">
+                  </div>
+                  <div class="rightAlign" style="float: right;">
+                      <span>Download full document:</span>
+                      <ul class="file-types">
+                        <li><a style="border: 1px solid #EE3D24;padding: 5px;font-size: 11px;color: #EE3D24;border-radius: 5px;font-weight: 700">PDF</a></li>
+                        <li><a style="border: 1px solid #2A579A;padding: 5px;font-size: 11px;color: #2A579A;border-radius: 5px;font-weight: 700">DOCX</a></li>
+                        <li><a style="border: 1px solid #495164;padding: 5px;font-size: 11px;color: #495164;border-radius: 5px;font-weight: 700">EMAIL</a></li>
+                        <li><a style="border: 1px solid #495164;padding: 5px;font-size: 11px;color: #495164;border-radius: 5px;font-weight: 700">PRINT</a></li>
+                      </ul>
+                  </div>
+                  </div>
+                   <h1 id="platform-optimization-sdk-for-citrix-receiver-for-linux-1310"><a class="toclink" href="#platform-optimization-sdk-for-citrix-receiver-for-linux-1310">Platform Optimization SDK for Citrix Receiver for Linux 13.10</a></h1>
+<h1 id="compatibility-with-receiver"><a class="toclink" href="#compatibility-with-receiver">Compatibility with Receiver</a></h1>
+<p>This is Version 13.10 of the Platform Optimization SDK. It is intended for use with Linux Receiver builds in the 13.10 series. There are separate versions of the SDK for each of the released architectures (X86, X86_64 and ARMhf) that differ only in the included binaries. </p>
+<h1 id="who-should-use-this-sdk"><a class="toclink" href="#who-should-use-this-sdk">Who should use this SDK?</a></h1>
+<p>The purpose of the SDK is to support developers who are creating plug-in extensions for the ICA engine component (wfica) of Citrix Receiver for Linux. Plugins are built as shareable libraries that are dynamically loaded by wfica. These plugins can perform the following functions: </p>
+<ul>
+<li>Provide accelerated decoding of JPEG and H.264 data used to draw the session image</li>
+<li>Control the allocation of memory used to draw the session image</li>
+<li>Improve performance by taking control of the low-level drawing of the session image </li>
+</ul>
+<p>Provide graphics output and user input services for OS environments that do not support X11. Plugins for decoding can be built independently of the other types, unless they need to control memory allocation. </p>
+<p>To test the sample plugins that can be built with this SDK, they may need to be renamed, and must be copied to the Receiver's installation directory.  </p>
+<p>The Receiver can also exploit additional plugins for accelerated audio and video codecs. Receiver can be configured to use GStreamer for audio, camera and multimedia functions, so such plugins are standard GStreamer components, and are not covered in the document.  </p>
+<p>There is also a UI Dialog abstraction which allows for the implementation of core dialogs to be replaced by the reimplementation of the UI Dialog Library.</p>
+<h1 id="plugins-for-h264-based-session-graphics"><a class="toclink" href="#plugins-for-h264-based-session-graphics">Plugins for H.264-based session graphics</a></h1>
+<p>XenDesktop version 6 and later support a protocol for presenting the remote session's graphics that uses a combination of H.264 and a proprietary lossless graphics encoding. For maximum flexibility in exploiting on-chip decoders and hardware rendering support, plugins take full control of the decoding, overlay and rendering process. </p>
+<p>The details of the interface for these plugins are documented as comments in the relevant header file, <strong>H264_decode.h</strong>, with an unaccelerated sample implementation in the H264_sample directory. The sample code (<strong>H264_sample</strong>) is wfica's fallback implementation that is used when no accelerated plugin is available. Build a plugin named <strong>ctxh264_fb.so</strong>. Rename this plugin as <strong>ctxh264.so</strong> and place it in <strong>$ICAROOT/lib</strong> to override other H264 plugins. The decoder provided contains stub functions which do no drawing. The sample serves as a template to begin work with. </p>
+<p>The sample code (<strong>H264_Pi_sample</strong>) is a Raspberry Pi implementation and is provided as a reference hardware implementation. </p>
+<h1 id="plugins-for-accelerated-jpeg-decoding"><a class="toclink" href="#plugins-for-accelerated-jpeg-decoding">Plugins for accelerated JPEG decoding</a></h1>
+<p>All currently supported versions of XenDesktop and XenApp for Unix can use JPEG to compress portions of the session image. Plugins that support hardware-accelerated JPEG decoding can give a large improvement in graphics performance for sessions not using H.264 session graphics. At startup, <strong>wfica</strong> looks for a plugin named ctxjpeg.so to handle JPEG decoding. </p>
+<p>The interface JPEG decoding plugins is in the <strong>jpeg_decode.h</strong> header file. The sample code (<strong>jpeg_sample</strong>) is that of wfica's fallback implementation that is used when no accelerated plugin is available, and for that reason builds a plugin named <strong>ctxjpeg.so</strong>.</p>
+<h1 id="plugins-for-memory-allocation"><a class="toclink" href="#plugins-for-memory-allocation">Plugins for memory allocation</a></h1>
+<p>Hardware-accelerated plugins for H.264 or JPEG decoding may need to allocate memory buffers with special characteristics, for example using physically contiguous pages. A single plugin component, <strong>KVMEPlugin.so</strong> is used for both straightforward memory allocation and for taking control of drawing the session image. When memory allocation is the purpose of the plugin, only two functions need to be supplied. </p>
+<p>The header file for these plugins is <strong>mainloop.h</strong> and the two entry points that must be implemented are <strong>special_allocate()</strong> and <strong>special_free()</strong>. The example code is in the <strong>allocation_sample</strong> directory. Before using this code as a model, pay careful attention to the comments, as parts of the code are there purely for backward compatibility with decoder plugins developed for now-obsolete versions of Receiver. </p>
+<h1 id="plugins-for-accelerated-drawing-in-x11-environments"><a class="toclink" href="#plugins-for-accelerated-drawing-in-x11-environments">Plugins for accelerated drawing in X11 environments</a></h1>
+<p>In some environments using X11, there may be drawing methods that are faster than the calls to XShmPutImage() that are used by default. An implementation of KVMEPlugin.so can use an alternative drawing method by providing the <strong>draw()</strong> entry point, which is used to push the session image to the screen. The optional <strong>draw_complete()</strong> entry point may also be provided. When these are used, there is no requirement to also implement the memory allocation functions.  </p>
+<p>The <strong>allocation_sample</strong> example includes an implementation of <strong>draw()</strong> that is almost identical to the default drawing code for X11.</p>
+<h1 id="plugins-for-non-x11-environments"><a class="toclink" href="#plugins-for-non-x11-environments">Plugins for non-X11 environments</a></h1>
+<p>This SDK includes a separate version of the Receiver engine, <strong>wfica_for_plugins</strong> that is not linked with any X11 libraries. The program requires a <strong>KVMEPlugin.so</strong> that provides video output, mouse and keyboard input, and timer and event detection services. Some features of the X11 version are not yet available: clipboard, sessions with multiple windows ("Seamless Windows"), multimedia and Flash support.  </p>
+<p>Two example plugin implementations are included: <strong>SDL_plugin</strong> contains an implementation based on the SDL library; and <strong>FB_plugin</strong> contains a version using Linux system calls and device files, using the raw frame buffer for display.  </p>
+<p>The environments supported with SDL depend on how the library is built, but usually X11 and frame buffer graphics are supported. To use frame buffer graphics run the program from a text console: it is usually necessary to run as the super user, or change the permissions on the <strong>/dev/fb0</strong> and <strong>/dev/mice</strong> files. The frame buffer plugin also requires access to those device files.  </p>
+<p><strong>wfica_for_plugins</strong> does not work when the sound virtual channel is configured to run in a private thread (the default). Before testing, disable the channel (<strong>ClientAudio=Off</strong> under <strong>[ICA 3.0]</strong>) or the thread (<strong>UseThread=Off</strong> under <strong>[ClientAudio]</strong>) in the <strong>module.ini </strong>configuration file. </p>
+<h1 id="hdx-multimedia-with-plugins"><a class="toclink" href="#hdx-multimedia-with-plugins">HDX multimedia with plugins</a></h1>
+<p>The HDX Multimedia feature can be used with accelerated plugins for X11 and plugins for non-X11 environments. Support is enabled by the configuration entry <strong>UseSubwindows=Off</strong>, placed under the <strong>[WFClient]</strong> heading. The <strong>draw_overlay()</strong> entry point to the plugin will be called to merge video output into the session image. The Sub-window Interface of the Virtual Channel API supports use of this mechanism in externally-developed Virtual Channels. The relevant header file, <strong>subwindow.h</strong>, is also included in this SDK. </p>
+<h1 id="ui-dialog-library"><a class="toclink" href="#ui-dialog-library">UI dialog library</a></h1>
+<p>The UI Dialog Library (<strong>UIDialogLib.so</strong>) implements an abstraction layer for the display of dialogs. A dialog's contents are dependent on the contents of the C formsElement structures passed (The formsElement structures are declared in <strong>UI_if.h</strong> in the toplevel inc directory). The dialog is built dynamically according to the given information in these structures and rendered. The formsElements themselves are essentially label and widget pairs, where the widget can be a text entry box, check box, set of radio buttons, combo box, multi combo box, button, hyperlink expander, scrolled view, selection table, button box, or another label. </p>
+<p>The UI Dialog Library is used for the majority of dialogs within the Linux Receiver processes, including the X11 based wfica. The processes storebrowse, AuthManager, PrimaryAuthManager, and ServiceRecord use it for all of their UI. The purpose is to ensure that the UI of these essential processes can be replaced with a UI toolkit of your choosing by re-implementing the library. The current implementation of the UI Dialog Library distributed with the Linux Receiver is GTK+. The code for this implementation is provided under the UIDialogLib/GTK directory in this SDK as an example.  </p>
+<p>The self-service, configmgr, and X11 wfica binaries require GTK+ for other aspects of their UI other than dialogs and therefore cannot be used with a different implementation of the UI Dialog Library than the provided GTK+ implementation. However, all of their functionality is available via the storebrowse command line interface and the configuration files. </p>
+<p>A selection of examples is provided under the UIDialogLib/test directory to showcase some of the widgets and dialogs that may be seen.  For information on the interface itself please read the UIDialogLib.h header in the UIDailogLib/inc directory.  </p>
+<h1 id="using-the-test-harness-for-kvme-plugins"><a class="toclink" href="#using-the-test-harness-for-kvme-plugins">Using the test harness for KVME plugins</a></h1>
+<p>The SDK includes a simple test harness for testing early versions of <strong>KVMEPlugin.so</strong> for non-X11 environments. The program is built in the <strong>plugin_test</strong> directory. When run, it will load a plugin from the current directory, initialize video output and log mouse and keyboard input events to standard output. </p>
+<p>Timer support can be verified by specifying a command argument of 1. Larger values of the first command argument will build a chain of data-passing stages that use pipes with timers and I/O readiness detection (<strong>select_fd()</strong> function) to transfer data in response to events. A second optional argument sets the initial timer value, for stress testing.  </p>
+<h1 id="change-history"><a class="toclink" href="#change-history">Change history</a></h1>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>13.8 and later</td>
+<td>Remove support for the armel platform.</td>
+</tr>
+<tr>
+<td>13.4</td>
+<td>Remove references to FFMPEG</td>
+</tr>
+<tr>
+<td>13.3</td>
+<td>Change plugin names (e.g., <strong>ctxjpeg_fb.so</strong> to <strong>ctxjpeg.so</strong> (et al)). <br> Re-organize H264_sample code and Make file changes.</td>
+</tr>
+<tr>
+<td>13.1 release 2</td>
+<td>Bug fixes and addition of this change history.</td>
+</tr>
+<tr>
+<td>13.1</td>
+<td>Add source code for the H.264 decoder plugin for Raspberry Pi. <br> Add support for HDX Multimedia output with non-X11 graphics. <br>  Add additional UI elements and an interface version number to UIDialogLib. <br> Rename structure members from private to priv for C++ compatibility.</td>
+</tr>
+</tbody>
+</table> 
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </section>
+
+      </div>
+    </div>
+    <!--<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+	<div class="footer-right">
+		<ul class="social-links">
+			<li class="list-inline"><a href="https://twitter.com/citrix"><i class="fa fa-twitter"></i>@citrix</a></li>
+			<li class="list-inline"><a href="mailto:support@citrix.com"><i class="fa fa-envelope-o"></i>support@citrix.com</a></li>
+		</ul>
+		<ul class="inner-pages">
+			<li class="list-inline"><a href="http://citrix.com/about/legal">Privacy and Terms</li>
+		</ul>
+	</div>
+</div>-->
+
+  </body>
+
+</html>
+
+<!--
+MkDocs version : 0.16.1
+Build Date UTC : 2018-06-21 17:43:17
+-->
